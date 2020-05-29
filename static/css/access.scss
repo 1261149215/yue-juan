@@ -1,0 +1,79 @@
+.contain_box {
+    height: 100%;
+    background: #fff;
+    display: flex;
+    .left {
+        width: 180px;
+        padding: 30px 0;
+        border-right: 1px solid #eee;
+        li {
+            height: 60px;
+            color: #333;
+            line-height: 60px;
+            text-align: center;
+            cursor: pointer;
+        }
+        .on {
+            background: #E6F9FA;
+            color: #409EFF;
+            border-right: 2px solid #409EFF;
+        }
+    }
+    .right {
+        padding: 0px 30px;
+        overflow: auto;
+        flex: 1;
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex: 1;
+            margin-right: 20px;
+            margin-left: 5px;
+        }
+    }
+    .action {
+        text-align: right;
+        .el-button--success {
+            width: 100px;
+        }
+    }
+    
+}
+.item_switch {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    label {
+        width: 100px;
+        text-align: right;
+        margin-right: 20px;
+    }
+}
+.item_check {
+    margin-left: 120px;
+    margin-bottom: 20px;
+}
+.my_item >>> .el-collapse-item__header {
+    flex-direction: row-reverse;
+}
+.el-collapse {
+    border: 1px solid #ebeef5;
+}
+.my_item >>> .el-collapse-item__arrow {
+    margin-left: 15px;
+}
+.my_item >>> .el-collapse-item__content {
+    padding-left: 45px;
+    padding-right: 30px;
+    padding-top: 20px;
+}
+.my_item >>> .el-collapse-item__header.is-active {
+    border-bottom-color: #EBEEF5;
+}
+.el-tree {
+    margin-left: 30px;
+}
+.el-tree >>> .el-tree-node__content {
+    height: 30px;
+}

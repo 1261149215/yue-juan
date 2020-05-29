@@ -1,0 +1,128 @@
+.clearfix {
+    &::after {
+        display: block;
+        height: 0;
+        content: ".";
+        clear: both;
+        visibility: hidden;
+    }
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.align-left {
+    text-align: left;
+}
+
+.align-right {
+    text-align: right;
+}
+
+.small-size {
+    font-size: 12px!important;
+}
+
+.large-size {
+    font-size: 16px!important;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #ffffff;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    .search {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+    .btns {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: nowrap;
+        .addData {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            flex-wrap: nowrap;
+            .add {
+                margin-right: 20px;
+                width: 40px;
+                height: 40px;
+                border-radius: 20px;
+                background: #409eff;
+                color: #ffffff;
+                text-align: center;
+                line-height: 40px;
+                font-size: 14px;
+                cursor: pointer;
+                transition: all .5s ease;
+                i {
+                    display: inline-block;
+                }
+                h1 {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: normal;
+                    display: none;
+                }
+            }
+            .add:hover {
+                width: 120px;
+                text-align: center;
+                line-height: 40px;
+                i {
+                    display: inline-block;
+                }
+                h1 {
+                    margin: 0;
+                    font-size: 16px;
+                    font-weight: normal;
+                    display: inline-block;
+                }
+            }
+            .upload-demo {
+                display: none;
+            }
+        }
+    }
+    .tablediv {
+        margin-top: 20px;
+        width: 100%;
+        display: flex;
+        flex: 1;
+        // height: calc(100% - 238px);
+        .el-table th {
+            background: #f8f8f8;
+            color: #333;
+        }
+    }
+    @media screen and (max-height: 800px) {
+        .tablediv {
+            margin-top: 20px;
+            width: 100%;
+            height: calc(100% - 177px);
+        }
+    }
+    .page {
+        margin-top: 25px;
+    }
+}
